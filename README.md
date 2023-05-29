@@ -11,6 +11,7 @@ Bu basit Java programı, kullanıcıdan alınan uzunluk değerine göre rastgele
    ```shell
    cd random-password-generator
 4. Terminali açın ve aşağıdaki komutu çalıştırın:
+   ```shell
    javac Main.java
    java Main
 5. Şifre uzunluğunu girin ve Enter tuşuna basın.
