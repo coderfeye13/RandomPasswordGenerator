@@ -1,8 +1,15 @@
 import java.util.Random;
-import java.util.Scanner;
-public class RandomPasswordGenerator {
-        String karakterler = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()";
 
+public class PasswordGenerator {
+    private final int uzunluk;
+    private final String karakterler;
+
+    public PasswordGenerator(int uzunluk, String karakterler) {
+        this.uzunluk = uzunluk;
+        this.karakterler = karakterler;
+    }
+
+    public String sifreOlustur() {
         Random random = new Random();
         StringBuilder sb = new StringBuilder();
 
@@ -12,6 +19,6 @@ public class RandomPasswordGenerator {
             sb.append(rastgeleKarakter);
         }
 
-        String sifre = sb.toString();
-        System.out.println("Oluşturulan şifre: " + sifre);
+        return sb.toString();
     }
+}
